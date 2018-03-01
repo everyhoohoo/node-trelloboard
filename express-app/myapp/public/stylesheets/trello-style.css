@@ -1,0 +1,27 @@
+.container {
+    border: solid 2px black;
+    background-color: grey;
+    width: 99%;
+    height: 98vh;
+    display: flex;
+}
+
+.swimlane {
+    width: 200px;
+    height: 100%;
+    border: solid 1px #222222;
+    background-color: #dddddd;
+    flex-basis: 200px;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    border: solid 1px #000000;
+    background-color: #aaaaaa;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
