@@ -38,7 +38,7 @@ function postSwimLanes(req, res, next) {
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log(req.body);
 
-  var column = new Column(req.body.id, req.body.dataSwimlaneID, req.body.slClass);
+  var column = new Column(req.body.id, req.body.dSwimlaneID, req.body.classType);
 
   columnData.push(column);
 
@@ -72,7 +72,7 @@ function postCards(req, res, next) {
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log(req.body);
 
-  var card = new Card(req.body.id, req.body.dataSwimlaneID, req.body.cClass, req.body.title, req.body.description);
+  var card = new Card(req.body.id, req.body.dSwimlaneID, req.body.classType, req.body.title, req.body.description);
 
   cardData.push(card);
 

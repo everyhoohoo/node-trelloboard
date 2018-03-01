@@ -1,8 +1,8 @@
     $(document).ready(function() {
         let swimlaneID = 0;
         let cardID = 0;
-        let column = {id:null , dSwimlaneID: null, classType: ""};
-        let card = {id:null, dSwimlaneID: null, classType:"", title:"", description:""};
+        let column;
+        let card;
 
 
         $("#startBtn").click(addSwimLane);
@@ -52,7 +52,6 @@
 
             let slid = $(this).data("swimlane-id");
             let cid = "card"+ cardID;
-            alert(slid);
 
             var txtTitle = prompt("Name your card:");
             var txtDescription = prompt("Description of your task:");
